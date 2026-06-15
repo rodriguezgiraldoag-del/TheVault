@@ -495,15 +495,15 @@ body {
     /* Navbar */
     .navbar {
         flex-direction: column;
-        padding: 20px;
+        padding: 15px 20px;
         gap: 15px;
     }
 
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
-        font-size: 14px;
+        gap: 12px;
+        font-size: 13px;
     }
 
     /* Hero */
@@ -532,30 +532,32 @@ body {
     }
 
     .product-grid {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
 
-    .product-card img {
-        height: auto;
-    }
+.product-card img {
+    height: 180px;
+}
 
 /* Featured Brands */
 .brands {
-    padding: 50px 15px;
+    padding: 40px 15px;
 }
 
 .brand-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
 }
 
 .brand-card {
-    padding: 15px;
+    padding: 12px;
 }
 
 .brand-card img {
-    max-width: 90px;
-    max-height: 55px;
+    width: 100%;
+    max-width: 80px;
+    max-height: 50px;
 }
 
     /* Product Page */
