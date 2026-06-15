@@ -2,6 +2,10 @@
 /* =========================
    RESET
 ========================= */
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 
 * {
     margin: 0;
@@ -491,6 +495,7 @@ body {
 ========================= */
 
 @media (max-width: 768px) {
+    
 
     /* Navbar */
     .navbar {
@@ -531,9 +536,9 @@ body {
         padding: 50px 20px;
     }
 
-    .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+   .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .product-card img {
@@ -552,6 +557,8 @@ body {
 
 .brand-card {
     padding: 12px;
+    width: 100%;
+    min-width: 0;
 }
 
 .brand-card img {
