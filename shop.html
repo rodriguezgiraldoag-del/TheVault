@@ -6,7 +6,13 @@
     <title>The Vault | Shop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+<script>
+    function toggleSidebar() {
+        document
+            .getElementById("brandSidebar")
+            .classList.toggle("active");
+    }
+</script>
 <body>
 
     <!-- Navbar -->
@@ -28,16 +34,16 @@
     <section class="shop-header">
         <h1>SHOP</h1>
 
-        <button class="brand-toggle">
-            ☰ Browse by Brand
-        </button>
+        <button class="brand-toggle" onclick="toggleSidebar()">
+    ☰ Browse by Brand
+</button>
     </section>
 
     <!-- Shop Layout -->
     <section class="shop-layout">
 
         <!-- Sidebar -->
-        <aside class="brand-sidebar">
+        <aside class="brand-sidebar" id="brandSidebar">
 
             <h3>Brands</h3>
 

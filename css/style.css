@@ -606,5 +606,37 @@ body {
     .footer {
         padding: 30px 20px;
     }
+    /* Sliding Sidebar */
+.brand-sidebar {
+    transition: left 0.3s ease;
+}
+
+/* Mobile Sidebar */
+@media (max-width: 768px) {
+
+    .brand-sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+
+        width: 250px;
+        height: 100%;
+
+        background-color: white;
+
+        z-index: 1000;
+
+        padding: 30px;
+
+        border-right: 1px solid #ddd;
+
+        overflow-y: auto;
+    }
+
+    .brand-sidebar.active {
+        left: 0;
+    }
+
+}
 }
 ```
