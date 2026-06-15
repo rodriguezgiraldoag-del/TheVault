@@ -1,123 +1,263 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vault</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <header>
         <nav class="navbar">
-            <div class="logo">THE VAULT</div>
+
+            <div class="logo">
+                THE VAULT
+            </div>
 
             <ul class="nav-links">
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Brands</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="cart">
-                🛒
+                <a href="cart.html">🛒</a>
             </div>
+
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+
         <div class="hero-content">
-            <h1> Designer Clothing & shoes </h1>
-<p>Everything you need. All in one place.</p>
+
+            <h1>
+                Designer Clothing & Shoes
+            </h1>
+
+            <p>
+                Everything you need. All in one place.
+            </p>
+
             <div class="hero-buttons">
-                <button>Shop Now</button>
-                <button class="secondary">New Drops</button>
+                <a href="shop.html">
+                    <button>
+                        Shop Now
+                    </button>
+                </a>
             </div>
+
         </div>
+
     </section>
 
-   <!-- Featured Products -->
-<section class="featured">
-    <h2>Featured Products</h2>
+    <!-- Featured Products -->
+    <section class="featured" id="products">
 
-    <div class="product-grid">
+        <h2>
+            Latest Drops
+        </h2>
 
-        <div class="product-card">
-            <img src="images/sharkhoodie.png" alt="BAPE Shark Hoodie">
-            <h3>BAPE Shark Full Zip Hoodie</h3>
-            <p>$80</p>
+        <div class="product-grid">
+
+            <!-- Shark Hoodie -->
+            <a href="product.html?id=sharkhoodie" class="product-link">
+
+                <div class="product-card">
+
+                    <img src="images/sharkhoodie.png"
+                         alt="BAPE Shark Full Zip Hoodie">
+
+                    <p class="brand-name">
+                        BAPE
+                    </p>
+
+                    <h3>
+                        Shark Full Zip Hoodie
+                    </h3>
+
+                    <p>
+                        $80
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Denim Tears -->
+            <a href="product.html?id=denimtears" class="product-link">
+
+                <div class="product-card">
+
+                    <img src="images/denimtearsgrey.png"
+                         alt="Denim Tears Grey Hoodie">
+
+                    <p class="brand-name">
+                        Denim Tears
+                    </p>
+
+                    <h3>
+                        Denim Tears Grey Hoodie
+                    </h3>
+
+                    <p>
+                        $80
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- BAPE College Tee -->
+            <a href="product.html?id=bapecollege" class="product-link">
+
+                <div class="product-card">
+
+                    <img src="images/bapecollegetee.png"
+                         alt="White BAPE College Tee">
+
+                    <p class="brand-name">
+                        BAPE
+                    </p>
+
+                    <h3>
+                        White BAPE College Tee
+                    </h3>
+
+                    <p>
+                        $40
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Big Ape Head Tee -->
+            <a href="product.html?id=bigapehead" class="product-link">
+
+                <div class="product-card">
+
+                    <img src="images/bigapehead.png"
+                         alt="BAPE Big Ape Head Tee">
+
+                    <p class="brand-name">
+                        BAPE
+                    </p>
+
+                    <h3>
+                        BAPE Big Ape Head Tee
+                    </h3>
+
+                    <p>
+                        $40
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Hellstar Tee -->
+            <a href="product.html?id=hellstarthorn" class="product-link">
+
+                <div class="product-card">
+
+                    <img src="images/hellstarthorn.png"
+                         alt="Hellstar Thorn Glitter White Tee">
+
+                    <p class="brand-name">
+                        Hellstar
+                    </p>
+
+                    <h3>
+                        Hellstar Thorn Glitter White Tee
+                    </h3>
+
+                    <p>
+                        $35
+                    </p>
+
+                </div>
+
+            </a>
+
         </div>
 
-        <div class="product-card">
-            <img src="images/denimtearsgrey.png" alt="Denim Tears Hoodie">
-            <h3>Denim Tears Grey Hoodie</h3>
-            <p>$80</p>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="brands" id="brands">
+
+        <h2>
+            FEATURED BRANDS
+        </h2>
+
+        <div class="brand-grid">
+
+            <div class="brand-card">
+                <img src="images/bape.png" alt="BAPE">
+            </div>
+
+            <div class="brand-card">
+                <img src="images/sp5der.webp" alt="SP5DER">
+            </div>
+
+            <div class="brand-card">
+                <img src="images/hellstar.webp" alt="Hellstar">
+            </div>
+
+            <div class="brand-card">
+                <img src="images/denimtears.jpeg" alt="Denim Tears">
+            </div>
+
+            <div class="brand-card">
+                <img src="images/chromehearts.png" alt="Chrome Hearts">
+            </div>
+
+            <div class="brand-card">
+                <img src="images/supreme.png" alt="Supreme">
+            </div>
+
         </div>
 
-        <div class="product-card">
-            <img src="images/bapecollegetee.png" alt="BAPE College Tee">
-            <h3>White BAPE College Tee</h3>
-            <p>$40</p>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+
+        <div class="footer-section">
+
+            <h4>
+                FOLLOW US
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="https://instagram.com/The__Vault_____"
+                       target="_blank">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
 
-        <div class="product-card">
-            <img src="images/bigapehead.png" alt="Big Ape Head Tee">
-            <h3>BAPE Big Ape Head Tee</h3>
-            <p>$40</p>
-        </div>
+    </footer>
 
-        <div class="product-card">
-            <img src="images/hellstarthorn.png" alt="Hellstar Thorn Tee">
-            <h3>Hellstar Thorn Glitter White Tee</h3>
-            <p>$35
-            </p>
-        </div>
-
-    </div>
-</section>
-          
-    <h2>FEATURED BRANDS</h2>
-
-    <div class="brand-grid">
-
-        <div class="brand-card">
-            <img src="images/bape.png" alt="BAPE">
-        </div>
-
-        <div class="brand-card">
-            <img src="images/sp5der.webp" alt="SP5DER">
-        </div>
-
-        <div class="brand-card">
-            <img src="images/hellstar.webp" alt="Hellstar">
-        </div>
-
-        <div class="brand-card">
-            <img src="images/denimtears.jpeg" alt="Denim Tears">
-        </div>
-
-        <div class="brand-card">
-            <img src="images/chromehearts.png" alt="Chrome Hearts">
-        </div>
-
-        <div class="brand-card">
-            <img src="images/supreme.png" alt="Supreme">
-        </div>
-
-    </div>
-</section>
-<div class="footer-section">
-    <h4>FOLLOW US</h4>
-    <ul>
-        <li><a href="https://instagram.com/The__Vault_____" target="_blank">
-            Instagram
-        </a></li>
-
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</div>
 </body>
 </html>
+```
