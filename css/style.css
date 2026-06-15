@@ -539,18 +539,24 @@ body {
         height: auto;
     }
 
-    /* Featured Brands */
-    .brands {
-        padding: 50px 20px;
-    }
+/* Featured Brands */
+.brands {
+    padding: 50px 15px;
+}
 
-    .brand-grid {
-        grid-template-columns: 1fr;
-    }
+.brand-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
 
-    .brand-card {
-        padding: 25px;
-    }
+.brand-card {
+    padding: 15px;
+}
+
+.brand-card img {
+    max-width: 90px;
+    max-height: 55px;
+}
 
     /* Product Page */
     .product-page {
