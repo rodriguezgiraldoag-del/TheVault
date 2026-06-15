@@ -1,4 +1,4 @@
-```css
+
 /* =========================
    RESET
 ========================= */
@@ -264,7 +264,6 @@ body {
     object-fit: contain;
 }
 
-```css
 /* =========================
    SIMPLE FOOTER
 ========================= */
@@ -489,7 +488,7 @@ body {
     font-size: 32px;
 }
 ```
-```css
+
 /* =========================
    MOBILE STYLES
 ========================= */
@@ -562,9 +561,10 @@ body {
 }
 
 .brand-card img {
-    width: 100%;
-    max-width: 80px;
-    max-height: 50px;
+    width: auto;
+    height: auto;
+    max-width: 70px;
+    max-height: 45px;
 }
 
     /* Product Page */
