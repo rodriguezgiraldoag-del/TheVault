@@ -43,7 +43,10 @@
     </button>
 
 </div>
-
+<div class="slider-dots">
+    <span class="dot active" onclick="goToImage(0)"></span>
+    <span class="dot" onclick="goToImage(1)"></span>
+</div>
         <div class="product-details">
 
             <p class="product-brand">
@@ -142,6 +145,7 @@
         </div>
 
     </footer>
+    <!-- JS -->
 <script>
 
 const images = [
@@ -150,6 +154,17 @@ const images = [
 ];
 
 let currentImage = 0;
+
+const dots = document.querySelectorAll(".dot");
+
+function updateDots() {
+
+    dots.forEach(dot => {
+        dot.classList.remove("active");
+    });
+
+    dots[currentImage].classList.add("active");
+}
 
 function changeImage(direction) {
 
@@ -165,6 +180,17 @@ function changeImage(direction) {
 
     document.getElementById("productImage").src =
         images[currentImage];
+
+    updateDots();
+}
+function goToImage(index) {
+
+    currentImage = index;
+
+    document.getElementById("productImage").src =
+        images[currentImage];
+
+    updateDots();
 }
 
 </script>
