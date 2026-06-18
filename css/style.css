@@ -675,7 +675,7 @@ body {
 }
 
 .dot.active {
-    background-color: black;
+    background-color: rgb(112, 0, 0);
 }
 }
 
