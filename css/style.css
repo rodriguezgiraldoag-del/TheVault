@@ -208,6 +208,20 @@ body {
 
     font-weight: bold;
 }
+.product-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
 
 /* =========================
    FEATURED BRANDS
@@ -678,6 +692,10 @@ body {
 
 .dot.active {
     background-color: rgb(150, 0, 0);
+}
+.brand-card {
+    text-decoration: none;
+    color: inherit;
 }
 }
 
